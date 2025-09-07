@@ -7,7 +7,7 @@ This document outlines the architecture and implementation approach for streamin
 ## High-Level Architecture
 
 ```mermaid
-graph TD
+graph LR
     A[ServiceNow] -->|REST API/Events| B[Kafka Producer]
     B --> C[Kafka Cluster]
     C --> D[Kafka Connect S3 Sink]
